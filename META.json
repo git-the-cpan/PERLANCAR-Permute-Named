@@ -36,7 +36,7 @@
             "File::Spec" : "0",
             "IO::Handle" : "0",
             "IPC::Open3" : "0",
-            "Test::More" : "0"
+            "Test::More" : "0.98"
          }
       }
    },
@@ -52,7 +52,7 @@
          "web" : "https://github.com/perlancar/perl-PERLANCAR-Permute-Named"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.022000"

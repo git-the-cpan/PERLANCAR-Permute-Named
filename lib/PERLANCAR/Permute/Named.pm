@@ -1,7 +1,7 @@
 package PERLANCAR::Permute::Named;
 
-our $DATE = '2015-10-01'; # DATE
-our $VERSION = '0.01'; # VERSION
+our $DATE = '2015-10-02'; # DATE
+our $VERSION = '0.02'; # VERSION
 
 use 5.010001;
 use strict 'subs', 'vars';
@@ -38,7 +38,7 @@ sub permute_named {
     }
     $code .= " }";
     #say $code;
-    eval $code; if ($@) { say $code; die }
+    eval $code; if ($@) { warn "$code\n"; die }
     wantarray ? @res : \@res;
 }
 
@@ -57,7 +57,7 @@ PERLANCAR::Permute::Named - Permute multiple-valued key-value pairs
 
 =head1 VERSION
 
-This document describes version 0.01 of PERLANCAR::Permute::Named (from Perl distribution PERLANCAR-Permute-Named), released on 2015-10-01.
+This document describes version 0.02 of PERLANCAR::Permute::Named (from Perl distribution PERLANCAR-Permute-Named), released on 2015-10-02.
 
 =head1 SYNOPSIS
 
